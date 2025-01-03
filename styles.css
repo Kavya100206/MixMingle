@@ -1,0 +1,167 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #1e2a47; /* Dark blue background */
+    color: #f1f1f1; /* Light text color for contrast */
+}
+
+/* App Container */
+.app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+header {
+    background: #2c3e50; /* Dark teal header */
+    text-align: center;
+    padding: 2.5rem 0;
+    border-radius: 10px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+header h1 {
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #aaa;
+}
+
+main.content {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Search Section */
+.search-section {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.search-box {
+    display: inline-flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-input {
+    width: 60%;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #3a3a3a;
+    background-color: #34495e; /* Dark teal background for input */
+    color: #f1f1f1;
+    font-size: 1.2rem;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.search-input:focus {
+    background-color: #2c3e50;
+}
+
+.search-button {
+    background: #ff6f61; /* Coral accent color */
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Track List & Selected Tracks */
+.track-list-section, .selected-tracks-section {
+    padding: 1rem;
+    background-color: #34495e; /* Dark teal background for cards */
+    border-radius: 8px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.track-list, .selected-tracks {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.track-list li, .selected-tracks li {
+    background: #3b4a62; /* Slightly lighter dark blue */
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.track-list li:hover, .selected-tracks li:hover {
+    background-color: #2c3e50; /* Darker teal background on hover */
+    transform: scale(1.02);
+}
+
+/* Output Section */
+.output-section {
+    text-align: center;
+    padding: 2rem;
+    background-color: #34495e;
+    border-radius: 10px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.audio-player {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
+
+.download-button {
+    display: inline-block;
+    background: #ff6f61; /* Coral accent color */
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.download-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    color: #aaa;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 1rem 0;
+}
