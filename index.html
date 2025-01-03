@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Mashup Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Music Mashup Generator</h1>
+            <p>Create the perfect mashup by searching for your favorite tracks!</p>
+        </header>
+
+        <main class="content">
+            <!-- Search Section -->
+            <section class="search-section">
+                <div class="search-box">
+                    <input type="text" id="searchInput" class="search-input" placeholder="Search for tracks...">
+                    <button id="searchButton" class="search-button">Search</button>
+                </div>
+            </section>
+
+            <!-- Track List Section -->
+            <section class="track-list-section">
+                <h2>Available Tracks</h2>
+                <ul id="trackList" class="track-list"></ul>
+            </section>
+
+            <!-- Selected Tracks Section -->
+            <section class="selected-tracks-section">
+                <h2>Selected Tracks</h2>
+                <ul id="selectedTracks" class="selected-tracks"></ul>
+            </section>
+
+            <!-- Output Section -->
+            <section class="output-section">
+                <h2>Generated Mashup</h2>
+                <div class="output-box">
+                    <audio controls id="outputAudio" class="audio-player"></audio>
+                    <a href="#" id="downloadMashup" class="download-button">Download Mashup</a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Music Mashup Generator. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
